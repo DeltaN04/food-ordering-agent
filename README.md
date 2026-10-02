@@ -9,6 +9,16 @@ food-ordering-agent/
   backend/    — Express + TS chat agent API
   frontend/   — React + Vite chat ordering UI
   automation/ — Playwright cross-platform ordering bot (Swiggy live, Zomato stub)
+  python/     — Python client + CLI for the backend API (stdlib only)
+```
+
+## Python client
+
+```bash
+cd python
+python3 -m food_agent.cli menu biryani        # browse
+python3 -m food_agent.cli ask "veg under 150" # chat
+python3 -m food_agent.cli                      # interactive: menu | add | cart | checkout | track | ask
 ```
 
 ## Automation bot (real platforms)
