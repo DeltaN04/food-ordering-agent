@@ -14,7 +14,7 @@
 
 </div>
 
-## ✨ What it does
+## What it does
 
 | Surface | Details |
 |---|---|
@@ -25,7 +25,7 @@
 
 > **Proven on a live order:** McAloo Tikki meal from McDonald's (Baner) → Casual address → payments page at ₹264, with honest fallbacks along the way (no "Large" variant exists for that dish — the bot reports the Medium combo instead of failing; UPI wasn't offered — it says so and suggests the closest QR path).
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 food-ordering-agent/
@@ -41,9 +41,9 @@ food-ordering-agent/
 **Key engineering decisions:**
 - Menu ADD buttons ignore synthetic DOM events (WAF bot checks) → the bot invokes the app's own `updateItem` Redux thunk through the live React fiber. Same UI result, zero fakery.
 - `FoodProvider` / `PlatformAdapter` interfaces keep Swiggy/Zomato/UberEats swappable; payments are mock-by-default, Stripe-ready.
-- The bot **never charges** — it stops at the payment screen for manual QR/card pay.
+- The bot **never charges** it stops at the payment screen for manual QR/card pay.
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 # 1. Chat API + UI (mock data, no keys needed)
