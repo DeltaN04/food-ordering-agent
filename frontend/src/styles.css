@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #faf7f2; color: #1c1917; }
+.app { max-width: 1100px; margin: 0 auto; padding: 16px; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.header h1 { font-size: 20px; margin: 0; }
+.tabs { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+.tabs button { padding: 8px 14px; border-radius: 999px; border: 1px solid #e7e5e4; background: white; cursor: pointer; }
+.tabs button.active { background: #16a34a; color: white; border-color: #16a34a; }
+.grid { display: grid; grid-template-columns: 1fr 340px; gap: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+.card { background: white; border: 1px solid #e7e5e4; border-radius: 12px; padding: 12px; }
+.chatbox { height: 420px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+.msg { padding: 8px 12px; border-radius: 12px; max-width: 85%; white-space: pre-wrap; }
+.msg.user { align-self: flex-end; background: #16a34a; color: white; }
+.msg.bot { align-self: flex-start; background: #f5f5f4; }
+.row { display: flex; gap: 8px; }
+input, select { padding: 10px; border-radius: 10px; border: 1px solid #d6d3d1; flex: 1; }
+button.primary { background: #16a34a; color: white; border: none; border-radius: 10px; padding: 10px 16px; cursor: pointer; }
+button.ghost { background: white; border: 1px solid #d6d3d1; border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.dish { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px dashed #e7e5e4; }
+.veg { font-size: 11px; padding: 2px 6px; border-radius: 6px; background: #dcfce7; }
+.nonveg { font-size: 11px; padding: 2px 6px; border-radius: 6px; background: #fee2e2; }
+.muted { color: #78716c; font-size: 13px; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.chips button { font-size: 12px; }
+.status { font-weight: 700; text-transform: capitalize; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+td, th { padding: 6px; border-bottom: 1px solid #eee; text-align: left; }
