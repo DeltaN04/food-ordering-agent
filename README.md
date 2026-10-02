@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍛 Food Ordering Agent
+# Food Ordering Agent
 
 **Chat-first food ordering across real platforms — from prompt to payment page, autonomously.**
 
